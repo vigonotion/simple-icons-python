@@ -36,8 +36,9 @@ def title_to_filename(title):
 
 data = None
 
+
 with open(
-    Path(f"si-source/_data/simple-icons.json").resolve(),
+    Path(__file__, f"../../si-source/_data/simple-icons.json").resolve(),
     mode="r",
     encoding="utf-8",
     errors="ignore",
@@ -51,7 +52,7 @@ with open(
 
 def get_svg(icon):
 
-    path = Path(f"si-source/icons/{icon}.svg").resolve()
+    path = Path(__file__, f"../../si-source/icons/{icon}.svg").resolve()
 
     try:
         with open(path, mode="r", encoding="utf-8", errors="ignore") as file:
