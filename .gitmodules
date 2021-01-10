@@ -1,0 +1,3 @@
+[submodule "si-source"]
+	path = si-source
+	url = https://github.com/simple-icons/simple-icons.git
